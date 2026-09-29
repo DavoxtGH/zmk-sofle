@@ -128,11 +128,11 @@
 &trans   &trans  &mo 4      &kp C     &kp V      &kp DEL    &kp DOWN   &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &kp LSHFT  &kp J     &kp Z      &kp Y      &kp LEFT   &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &kp LCTRL  &kp LALT  &kp SPACE  &kp R      &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &none   &none      &trans    &trans     &trans     &kp RET    &trans  &trans  &trans  &trans  &trans
+&to 0    &none   &none      &trans    &trans     &mo 5      &kp RET    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Clip Studio Pait V1";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&inc_dec_kp NUMBER_1 NUMBER_2>, <&rsr_trans>;
         };
 
         layer_4 {
@@ -146,6 +146,18 @@
 
             display-name = "LAYER4";
             sensor-bindings = <&rsr_vol &rsr_trans>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp COMMA PERIOD>;
         };
     };
 };
