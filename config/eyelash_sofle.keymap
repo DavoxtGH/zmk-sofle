@@ -102,7 +102,7 @@
 &trans     &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans     &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&trans     &to 3            &to 0           &kp PRINTSCREEN  &trans           &kp PRINTSCREEN    &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&trans     &to 3            &to 0           &mo 2            &trans           &kp PRINTSCREEN    &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -183,11 +183,11 @@
 
         L8_Simbols {
             bindings = <
-&trans  &kp LS(LT)    &none          &trans     &kp LS(GT)    &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LBRC)  &kp LS(PLUS)   &kp EQUAL  &kp LS(RBRC)  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LPAR)  &kp LS(UNDER)  &kp MINUS  &kp LS(RPAR)  &none              &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER
-&trans  &kp LBKT      &kp FSLH       &kp BSLH   &kp RBKT      &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans         &trans     &trans        &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp LS(LT)    &none          &trans     &kp LS(GT)    &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp LS(LBRC)  &kp LS(PLUS)   &kp EQUAL  &kp LS(RBRC)  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LS(LPAR)  &kp LS(UNDER)  &kp MINUS  &kp LS(RPAR)  &none              &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER
+&trans          &kp LBKT      &kp FSLH       &kp BSLH   &kp RBKT      &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans         &trans     &trans        &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
